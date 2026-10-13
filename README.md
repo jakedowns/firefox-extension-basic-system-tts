@@ -1,5 +1,7 @@
 # Right-Click Context System TTS
 
+![Screenshot](./screenshot.png)
+
 A small Firefox extension that adds a native-feeling **"Start speaking"** /
 **"Stop speaking"** action for selected text, using the operating system's
 built-in text-to-speech voices (the same voices Chrome exposes via
