@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>System TTS</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>System&nbsp;TTS</h1>
+
+    <div class="actions">
+      <button id="start" class="primary" type="button">&#9654;&nbsp;Start speaking</button>
+      <button id="stop" type="button">&#9632;&nbsp;Stop</button>
+    </div>
+
+    <p id="status" class="status">
+      Select text on the page, then press <strong>Start speaking</strong>.
+    </p>
+
+    <details id="settings">
+      <summary>Settings</summary>
+
+      <label class="field">
+        <span>Voice</span>
+        <select id="voice">
+          <option value="">System default</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Rate <em id="rate-val">1.00</em></span>
+        <input id="rate" type="range" min="0.5" max="2" step="0.05" value="1" />
+      </label>
+
+      <label class="field">
+        <span>Pitch <em id="pitch-val">1.00</em></span>
+        <input id="pitch" type="range" min="0" max="2" step="0.05" value="1" />
+      </label>
+
+      <label class="field">
+        <span>Volume <em id="volume-val">1.00</em></span>
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="1" />
+      </label>
+    </details>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Right-Click Context System TTS",
+  "version": "1.0.0",
+  "description": "Adds 'Start speaking' and 'Stop speaking' to the right-click context menu and the toolbar popup, using the operating system's built-in text-to-speech voices.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "right-click-context-system-tts@local",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["menus", "storage"],
+  "action": {
+    "default_title": "System TTS",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon.svg",
+      "96": "icons/icon.svg"
+    }
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
