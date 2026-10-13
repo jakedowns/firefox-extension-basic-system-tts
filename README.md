@@ -1,6 +1,7 @@
 # Right-Click Context System TTS
 
-![Screenshot](./screenshot.png)
+<img src="./screenshot.png" width="300" alt="Screenshot" />
+<img src="./screenshot2.png" width="300" alt="Screenshot2" />
 
 A small Firefox extension that adds a native-feeling **"Start speaking"** /
 **"Stop speaking"** action for selected text, using the operating system's
