@@ -1,5 +1,7 @@
 # Right-Click Context System TTS
 
+Download from Firefox Add-ons: https://addons.mozilla.org/en-US/firefox/addon/right-click-context-system-tts/
+
 <img src="./screenshot.png" width="300" alt="Screenshot" />
 <img src="./screenshot2.png" width="300" alt="Screenshot2" />
 
